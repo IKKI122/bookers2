@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
   
   def show
-  
+    @book=Book.all
   end
 
   def edit
