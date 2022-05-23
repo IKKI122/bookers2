@@ -9,7 +9,6 @@
     <% end %>
 
 <h2>Books</h2>
-<% @books.each do |book| %>
 <div>
      <table>
         <thead>
@@ -20,6 +19,7 @@
             </tr>
         </thead>
         <tbody>
+        <% @books.each do |book| %>
             <tr>
                 <td>
                     <%= link_to book_path(book.id) do %>
@@ -33,7 +33,7 @@
                 </td>
                 <td><%= book.body %></td>
             </tr>
+        <% end %>
         </tbody>
     </table>
 </div>
-<% end %>
