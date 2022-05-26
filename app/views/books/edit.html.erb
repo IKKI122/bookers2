@@ -9,4 +9,8 @@
                 <div class="book_opinion"><%= f.text_area :body %></div>
         </div>
         <%= f.submit 'Update Book' %>
-    <% end %>
+<% end %>
+
+<%= link_to "Show",book_path(@book.id) %>
+    |
+<%= link_to "Back",books_path %>
